@@ -4,6 +4,7 @@ from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, Wor
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
+    
     serializer_class = UserSerializer
 
 class TeamViewSet(viewsets.ModelViewSet):
